@@ -30,7 +30,7 @@ CREATE TABLE <tb_name> USING <stb_name> TAGS (tag_value1,...)
 沿用上面温度计的例子，使用超级表thermometer建立单个温度计数据表的语句如下：
 
 ```mysql
-create table t1 using thermometer tags (‘beijing', 10)
+create table t1 using thermometer tags ('beijing', 10)
 ```
 
 上述SQL以thermometer为模板，创建了名为t1的表，这张表的Schema就是thermometer的Schema，但标签location值为'beijing'，标签type值为10。
